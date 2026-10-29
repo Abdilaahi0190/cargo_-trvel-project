@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+::selection{background:#C9A246;color:#0A1B3E;}
+</style>
+</helmet>
+
+<div ref="{{ setRoot }}" style="--navy:#0A1B3E;--royal:#1E50D6;--gold:#C9A246;font-family:'Manrope',sans-serif;background:#EBE9E3;min-height:100vh;width:100%;color:#0A1B3E;-webkit-font-smoothing:antialiased;padding:0 0 80px;">
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+    <linearGradient id="goldG" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="color-mix(in srgb, var(--gold), #fff 40%)"/>
+      <stop offset="0.5" stop-color="var(--gold)"/>
+      <stop offset="1" stop-color="color-mix(in srgb, var(--gold), #000 26%)"/>
+    </linearGradient>
+    <linearGradient id="goldFlat" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="color-mix(in srgb, var(--gold), #fff 30%)"/>
+      <stop offset="1" stop-color="color-mix(in srgb, var(--gold), #000 16%)"/>
+    </linearGradient>
+  </defs></svg>
+
+  <!-- ===== MASTHEAD ===== -->
+  <div style="max-width:1120px;margin:0 auto;padding:34px 40px 0;display:flex;align-items:center;justify-content:space-between;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <svg viewBox="0 0 128 128" style="width:18px;overflow:visible"><path d="M64 4 L85 43 L124 64 L85 85 L64 124 L43 85 L4 64 L43 43 Z" fill="var(--navy)"/><path d="M85 43 L124 64 L85 85 L64 64 Z" fill="url(#goldG)"/></svg>
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.34em;text-transform:uppercase;color:#0A1B3E;">Waafi</span>
+    </div>
+    <span style="font-size:11px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:#9A968C;">Enterprise Identity · The Trade Star · 2026</span>
+  </div>
+  <div style="max-width:1120px;margin:18px auto 0;padding:0 40px;"><div style="height:1px;background:#D7D4CB;"></div></div>
+
+  <!-- ===== HERO ===== -->
+  <div style="max-width:1120px;margin:0 auto;padding:0 40px;">
+    <div style="background:#FFFFFF;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.07),0 24px 60px -30px rgba(10,27,62,0.28);margin-top:30px;padding:88px 40px 80px;display:flex;flex-direction:column;align-items:center;gap:38px;position:relative;overflow:hidden;">
+      <span style="position:absolute;top:26px;left:30px;font-size:11px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:#B9B5AA;">Primary Lockup</span>
+
+      <svg viewBox="0 0 128 128" style="width:128px;height:auto;overflow:visible">
+        <path d="M64 4 L43 43 L64 64 Z" fill="var(--navy)"/>
+        <path d="M64 4 L64 64 L85 43 Z" fill="var(--royal)"/>
+        <path d="M64 124 L85 85 L64 64 Z" fill="var(--navy)"/>
+        <path d="M64 124 L64 64 L43 85 Z" fill="var(--royal)"/>
+        <path d="M4 64 L43 85 L64 64 Z" fill="var(--navy)"/>
+        <path d="M4 64 L64 64 L43 43 Z" fill="var(--royal)"/>
+        <path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/>
+        <path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 28%)"/>
+      </svg>
+
+      <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+        <div style="font-family:'Sora',sans-serif;font-weight:800;font-size:78px;line-height:0.9;letter-spacing:-0.035em;color:var(--navy);">Waafi</div>
+        <div style="display:flex;align-items:center;gap:16px;">
+          <span style="height:1px;width:32px;background:var(--gold);"></span>
+          <span style="font-size:15px;font-weight:600;letter-spacing:0.46em;text-transform:uppercase;color:#46506B;padding-left:0.46em;">Cargo &amp; Logistics</span>
+          <span style="height:1px;width:32px;background:var(--gold);"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== RATIONALE ===== -->
+  <div style="max-width:1120px;margin:0 auto;padding:0 40px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px;">
+      <div style="background:linear-gradient(150deg,#13316b,var(--navy));border-radius:4px;padding:54px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;min-height:360px;">
+        <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 88% 12%, rgba(201,162,70,0.20), transparent 55%);"></div>
+        <div style="position:absolute;left:54px;top:30px;font-size:11px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.5);">The Symbol</div>
+        <svg viewBox="0 0 128 128" style="width:200px;height:auto;overflow:visible">
+          <path d="M64 4 L43 43 L64 64 Z" fill="#0E2350"/>
+          <path d="M64 4 L64 64 L85 43 Z" fill="var(--royal)"/>
+          <path d="M64 124 L85 85 L64 64 Z" fill="#0E2350"/>
+          <path d="M64 124 L64 64 L43 85 Z" fill="var(--royal)"/>
+          <path d="M4 64 L43 85 L64 64 Z" fill="#0E2350"/>
+          <path d="M4 64 L64 64 L43 43 Z" fill="var(--royal)"/>
+          <path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/>
+          <path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 30%)"/>
+        </svg>
+      </div>
+
+      <div style="display:grid;grid-template-rows:repeat(3,1fr);gap:22px;">
+        <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:26px 30px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:17px;color:var(--navy);">A compass, not a letter</div>
+          <div style="font-size:13.5px;line-height:1.55;color:#6A6E78;">A four-point navigational star — the universal mark of wayfinding, charts and global trade routes.</div>
+        </div>
+        <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:26px 30px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:17px;color:var(--navy);">The east point drives forward</div>
+          <div style="font-size:13.5px;line-height:1.55;color:#6A6E78;">One elongated gold vector breaks east — freight in motion, speed and the next shipment already moving.</div>
+        </div>
+        <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:26px 30px;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+          <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:17px;color:var(--navy);">Three planes, three modes</div>
+          <div style="font-size:13.5px;line-height:1.55;color:#6A6E78;">Faceted blades catch the light at different angles — air, sea and land, converging on one hub.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONCEPTS ===== -->
+  <div style="max-width:1120px;margin:0 auto;padding:0 40px;">
+    <div style="margin-top:54px;margin-bottom:20px;display:flex;align-items:baseline;gap:16px;">
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);">01</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;font-size:24px;letter-spacing:-0.01em;color:var(--navy);">Symbol exploration</h2>
+      <span style="flex:1;height:1px;background:#D7D4CB;"></span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px;">
+
+      <!-- Trade Star -->
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:40px 24px 22px;display:flex;flex-direction:column;align-items:center;gap:26px;">
+        <svg viewBox="0 0 128 128" style="width:96px;overflow:visible">
+          <path d="M64 4 L43 43 L64 64 Z" fill="var(--navy)"/><path d="M64 4 L64 64 L85 43 Z" fill="var(--royal)"/>
+          <path d="M64 124 L85 85 L64 64 Z" fill="var(--navy)"/><path d="M64 124 L64 64 L43 85 Z" fill="var(--royal)"/>
+          <path d="M4 64 L43 85 L64 64 Z" fill="var(--navy)"/><path d="M4 64 L64 64 L43 43 Z" fill="var(--royal)"/>
+          <path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 28%)"/>
+        </svg>
+        <div style="text-align:center;"><div style="font-family:'Sora',sans-serif;font-weight:700;font-size:14px;color:var(--navy);">Trade Star</div><div style="font-size:11.5px;color:#9A968C;margin-top:3px;">Compass · primary</div></div>
+      </div>
+
+      <!-- Orbit Routes -->
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:40px 24px 22px;display:flex;flex-direction:column;align-items:center;gap:26px;">
+        <svg viewBox="0 0 128 128" style="width:96px;overflow:visible">
+          <circle cx="64" cy="64" r="52" fill="none" stroke="var(--navy)" stroke-width="4"/>
+          <ellipse cx="64" cy="64" rx="52" ry="20" fill="none" stroke="var(--navy)" stroke-width="2.5" opacity="0.4"/>
+          <ellipse cx="64" cy="64" rx="20" ry="52" fill="none" stroke="var(--navy)" stroke-width="2.5" opacity="0.4"/>
+          <path d="M64 12 A52 52 0 0 1 112 60" fill="none" stroke="url(#goldG)" stroke-width="5" stroke-linecap="round" stroke-dasharray="1.5 9"/>
+          <path d="M101 44 L118 58 L100 67 Z" fill="url(#goldFlat)"/>
+          <circle cx="64" cy="12" r="5.5" fill="url(#goldFlat)"/>
+        </svg>
+        <div style="text-align:center;"><div style="font-family:'Sora',sans-serif;font-weight:700;font-size:14px;color:var(--navy);">Orbit Routes</div><div style="font-size:11.5px;color:#9A968C;margin-top:3px;">Globe · transit lane</div></div>
+      </div>
+
+      <!-- Slipstream -->
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:40px 24px 22px;display:flex;flex-direction:column;align-items:center;gap:26px;">
+        <svg viewBox="0 0 128 128" style="width:96px;overflow:visible">
+          <path d="M20 30 L52 64 L20 98" fill="none" stroke="var(--navy)" stroke-width="13" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/>
+          <path d="M48 32 L78 64 L48 96" fill="none" stroke="var(--navy)" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M76 34 L102 64 L76 94" fill="none" stroke="url(#goldG)" stroke-width="13" stroke-linejoin="round" stroke-linecap="round"/>
+        </svg>
+        <div style="text-align:center;"><div style="font-family:'Sora',sans-serif;font-weight:700;font-size:14px;color:var(--navy);">Slipstream</div><div style="font-size:11.5px;color:#9A968C;margin-top:3px;">Motion · forward</div></div>
+      </div>
+
+      <!-- Hub Network -->
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:40px 24px 22px;display:flex;flex-direction:column;align-items:center;gap:26px;">
+        <svg viewBox="0 0 128 128" style="width:96px;overflow:visible">
+          <line x1="64" y1="64" x2="22" y2="22" stroke="var(--navy)" stroke-width="3.5"/>
+          <line x1="64" y1="64" x2="106" y2="22" stroke="var(--navy)" stroke-width="3.5"/>
+          <line x1="64" y1="64" x2="22" y2="106" stroke="var(--navy)" stroke-width="3.5"/>
+          <line x1="64" y1="64" x2="106" y2="106" stroke="url(#goldFlat)" stroke-width="3.5"/>
+          <circle cx="22" cy="22" r="8" fill="var(--navy)"/><circle cx="106" cy="22" r="8" fill="var(--navy)"/>
+          <circle cx="22" cy="106" r="8" fill="var(--navy)"/><circle cx="106" cy="106" r="9" fill="url(#goldFlat)"/>
+          <rect x="52" y="52" width="24" height="24" rx="4" transform="rotate(45 64 64)" fill="var(--navy)"/>
+        </svg>
+        <div style="text-align:center;"><div style="font-family:'Sora',sans-serif;font-weight:700;font-size:14px;color:var(--navy);">Hub Network</div><div style="font-size:11.5px;color:#9A968C;margin-top:3px;">Nodes · trade links</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== LOCKUPS ===== -->
+  <div style="max-width:1120px;margin:0 auto;padding:0 40px;">
+    <div style="margin-top:54px;margin-bottom:20px;display:flex;align-items:baseline;gap:16px;">
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);">02</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;font-size:24px;letter-spacing:-0.01em;color:var(--navy);">Logo lockups</h2>
+      <span style="flex:1;height:1px;background:#D7D4CB;"></span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:22px;">
+
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:48px;display:flex;align-items:center;gap:26px;">
+        <svg viewBox="0 0 128 128" style="width:72px;overflow:visible;flex:none">
+          <path d="M64 4 L43 43 L64 64 Z" fill="var(--navy)"/><path d="M64 4 L64 64 L85 43 Z" fill="var(--royal)"/>
+          <path d="M64 124 L85 85 L64 64 Z" fill="var(--navy)"/><path d="M64 124 L64 64 L43 85 Z" fill="var(--royal)"/>
+          <path d="M4 64 L43 85 L64 64 Z" fill="var(--navy)"/><path d="M4 64 L64 64 L43 43 Z" fill="var(--royal)"/>
+          <path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 28%)"/>
+        </svg>
+        <span style="width:1px;height:56px;background:#E2DFD6;flex:none;"></span>
+        <div style="display:flex;flex-direction:column;gap:7px;">
+          <div style="font-family:'Sora',sans-serif;font-weight:800;font-size:42px;line-height:0.9;letter-spacing:-0.035em;color:var(--navy);">Waafi</div>
+          <div style="font-size:11px;font-weight:600;letter-spacing:0.38em;text-transform:uppercase;color:#46506B;padding-left:0.38em;">Cargo &amp; Logistics</div>
+        </div>
+      </div>
+
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;">
+        <svg viewBox="0 0 128 128" style="width:58px;overflow:visible">
+          <path d="M64 4 L43 43 L64 64 Z" fill="var(--navy)"/><path d="M64 4 L64 64 L85 43 Z" fill="var(--royal)"/>
+          <path d="M64 124 L85 85 L64 64 Z" fill="var(--navy)"/><path d="M64 124 L64 64 L43 85 Z" fill="var(--royal)"/>
+          <path d="M4 64 L43 85 L64 64 Z" fill="var(--navy)"/><path d="M4 64 L64 64 L43 43 Z" fill="var(--royal)"/>
+          <path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 28%)"/>
+        </svg>
+        <div style="font-family:'Sora',sans-serif;font-weight:800;font-size:34px;line-height:0.9;letter-spacing:-0.035em;color:var(--navy);">Waafi</div>
+        <div style="font-size:10px;font-weight:600;letter-spacing:0.36em;text-transform:uppercase;color:#46506B;padding-left:0.36em;">Cargo &amp; Logistics</div>
+      </div>
+
+      <div style="background:linear-gradient(150deg,#13316b,var(--navy));border-radius:4px;padding:48px;display:flex;align-items:center;gap:26px;position:relative;overflow:hidden;">
+        <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 90% 16%, rgba(201,162,70,0.16), transparent 55%);"></div>
+        <svg viewBox="0 0 128 128" style="width:68px;overflow:visible;flex:none">
+          <path d="M64 4 L43 43 L64 64 Z" fill="#9FB3DD"/><path d="M64 4 L64 64 L85 43 Z" fill="#EAF0FF"/>
+          <path d="M64 124 L85 85 L64 64 Z" fill="#9FB3DD"/><path d="M64 124 L64 64 L43 85 Z" fill="#EAF0FF"/>
+          <path d="M4 64 L43 85 L64 64 Z" fill="#9FB3DD"/><path d="M4 64 L64 64 L43 43 Z" fill="#EAF0FF"/>
+          <path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 30%)"/>
+        </svg>
+        <span style="width:1px;height:54px;background:rgba(255,255,255,0.18);flex:none;"></span>
+        <div style="display:flex;flex-direction:column;gap:7px;">
+          <div style="font-family:'Sora',sans-serif;font-weight:800;font-size:40px;line-height:0.9;letter-spacing:-0.035em;color:#fff;">Waafi</div>
+          <div style="font-size:11px;font-weight:600;letter-spacing:0.38em;text-transform:uppercase;color:rgba(234,240,255,0.72);padding-left:0.38em;">Cargo &amp; Logistics</div>
+        </div>
+      </div>
+
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;">
+        <svg viewBox="0 0 128 128" style="width:54px;overflow:visible">
+          <path d="M64 4 L85 43 L124 64 L85 85 L64 124 L43 85 L4 64 L43 43 Z" fill="#0A1B3E"/>
+        </svg>
+        <div style="font-family:'Sora',sans-serif;font-weight:800;font-size:30px;line-height:0.9;letter-spacing:-0.035em;color:#0A1B3E;">Waafi</div>
+        <div style="font-size:9.5px;font-weight:600;letter-spacing:0.34em;text-transform:uppercase;color:#0A1B3E;padding-left:0.34em;">Mono · 1-colour</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== PALETTE + TYPE ===== -->
+  <div style="max-width:1120px;margin:0 auto;padding:0 40px;">
+    <div style="margin-top:54px;margin-bottom:20px;display:flex;align-items:baseline;gap:16px;">
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);">03</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;font-size:24px;letter-spacing:-0.01em;color:var(--navy);">Palette &amp; type</h2>
+      <span style="flex:1;height:1px;background:#D7D4CB;"></span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;">
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:30px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:#B9B5AA;">Colour</div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;gap:16px;"><span style="width:54px;height:54px;border-radius:6px;background:#0A1B3E;flex:none;"></span><div><div style="font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:var(--navy);">Deep Navy</div><div style="font-size:12px;color:#9A968C;">#0A1B3E · primary</div></div></div>
+          <div style="display:flex;align-items:center;gap:16px;"><span style="width:54px;height:54px;border-radius:6px;background:#1E50D6;flex:none;"></span><div><div style="font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:var(--navy);">Royal Blue</div><div style="font-size:12px;color:#9A968C;">#1E50D6 · facet</div></div></div>
+          <div style="display:flex;align-items:center;gap:16px;"><span style="width:54px;height:54px;border-radius:6px;background:linear-gradient(135deg,#E3C271,#B98729);flex:none;"></span><div><div style="font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:var(--navy);">Metallic Gold</div><div style="font-size:12px;color:#9A968C;">#C9A246 · accent</div></div></div>
+          <div style="display:flex;align-items:center;gap:16px;"><span style="width:54px;height:54px;border-radius:6px;background:#F4F6FB;border:1px solid #E2DFD6;flex:none;"></span><div><div style="font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:var(--navy);">Cloud</div><div style="font-size:12px;color:#9A968C;">#F4F6FB · surface</div></div></div>
+        </div>
+      </div>
+
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:30px;display:flex;flex-direction:column;gap:20px;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:#B9B5AA;">Typeface</div>
+        <div style="display:flex;align-items:flex-end;gap:18px;border-bottom:1px solid #ECEAE3;padding-bottom:18px;">
+          <div style="font-family:'Sora',sans-serif;font-weight:800;font-size:62px;line-height:0.85;color:var(--navy);">Aa</div>
+          <div style="padding-bottom:6px;"><div style="font-family:'Sora',sans-serif;font-weight:700;font-size:15px;color:var(--navy);">Sora</div><div style="font-size:12px;color:#9A968C;">Wordmark · headings · 600–800</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-end;gap:18px;">
+          <div style="font-family:'Manrope',sans-serif;font-weight:700;font-size:62px;line-height:0.85;color:var(--navy);">Aa</div>
+          <div style="padding-bottom:6px;"><div style="font-family:'Manrope',sans-serif;font-weight:700;font-size:15px;color:var(--navy);">Manrope</div><div style="font-size:12px;color:#9A968C;">Body · UI · labels · 400–700</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== APP ICON ===== -->
+  <div style="max-width:1120px;margin:0 auto;padding:0 40px;">
+    <div style="margin-top:54px;margin-bottom:20px;display:flex;align-items:baseline;gap:16px;">
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);">04</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;font-size:24px;letter-spacing:-0.01em;color:var(--navy);">App icon &amp; avatar</h2>
+      <span style="flex:1;height:1px;background:#D7D4CB;"></span>
+    </div>
+    <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:50px;display:flex;align-items:center;gap:48px;flex-wrap:wrap;justify-content:center;">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+        <div style="width:128px;height:128px;border-radius:30px;background:linear-gradient(150deg,#13316b,var(--navy));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 18px 36px -16px rgba(10,27,62,0.55);">
+          <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 84% 10%, rgba(201,162,70,0.24), transparent 55%);"></div>
+          <svg viewBox="0 0 128 128" style="width:74px;overflow:visible">
+            <path d="M64 4 L43 43 L64 64 Z" fill="#9FB3DD"/><path d="M64 4 L64 64 L85 43 Z" fill="#EAF0FF"/>
+            <path d="M64 124 L85 85 L64 64 Z" fill="#9FB3DD"/><path d="M64 124 L64 64 L43 85 Z" fill="#EAF0FF"/>
+            <path d="M4 64 L43 85 L64 64 Z" fill="#9FB3DD"/><path d="M4 64 L64 64 L43 43 Z" fill="#EAF0FF"/>
+            <path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 30%)"/>
+          </svg>
+        </div>
+        <span style="font-size:12px;color:#9A968C;">iOS · rounded</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+        <div style="width:128px;height:128px;border-radius:50%;background:linear-gradient(150deg,#13316b,var(--navy));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 18px 36px -16px rgba(10,27,62,0.55);">
+          <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 84% 10%, rgba(201,162,70,0.24), transparent 55%);"></div>
+          <svg viewBox="0 0 128 128" style="width:70px;overflow:visible">
+            <path d="M64 4 L43 43 L64 64 Z" fill="#9FB3DD"/><path d="M64 4 L64 64 L85 43 Z" fill="#EAF0FF"/>
+            <path d="M64 124 L85 85 L64 64 Z" fill="#9FB3DD"/><path d="M64 124 L64 64 L43 85 Z" fill="#EAF0FF"/>
+            <path d="M4 64 L43 85 L64 64 Z" fill="#9FB3DD"/><path d="M4 64 L64 64 L43 43 Z" fill="#EAF0FF"/>
+            <path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 30%)"/>
+          </svg>
+        </div>
+        <span style="font-size:12px;color:#9A968C;">Avatar · circular</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:14px;">
+        <div style="display:flex;gap:14px;align-items:flex-end;">
+          <div style="width:30px;height:30px;border-radius:8px;background:var(--navy);display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 128 128" style="width:17px"><path d="M64 4 L85 43 L124 64 L85 85 L64 124 L43 85 L4 64 L43 43 Z" fill="#EAF0FF"/><path d="M85 43 L124 64 L85 85 L64 64 Z" fill="url(#goldG)"/></svg></div>
+          <div style="width:46px;height:46px;border-radius:11px;background:var(--navy);display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 128 128" style="width:27px"><path d="M64 4 L85 43 L124 64 L85 85 L64 124 L43 85 L4 64 L43 43 Z" fill="#EAF0FF"/><path d="M85 43 L124 64 L85 85 L64 64 Z" fill="url(#goldG)"/></svg></div>
+        </div>
+        <span style="font-size:12px;color:#9A968C;">Favicon · scales</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== IN CONTEXT ===== -->
+  <div style="max-width:1120px;margin:0 auto;padding:0 40px;">
+    <div style="margin-top:54px;margin-bottom:20px;display:flex;align-items:baseline;gap:16px;">
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);">05</span>
+      <h2 style="font-family:'Sora',sans-serif;font-weight:700;font-size:24px;letter-spacing:-0.01em;color:var(--navy);">In context</h2>
+      <span style="flex:1;height:1px;background:#D7D4CB;"></span>
+    </div>
+
+    <!-- TRUCK -->
+    <div style="background:linear-gradient(180deg,#DCE3EE,#C9D2E2);border-radius:4px;padding:50px 40px 0;overflow:hidden;position:relative;">
+      <span style="position:absolute;top:22px;left:30px;font-size:11px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:rgba(10,27,62,0.4);">Fleet · trailer livery</span>
+      <svg viewBox="0 0 460 210" style="width:100%;max-width:760px;display:block;margin:0 auto;overflow:visible">
+        <ellipse cx="230" cy="196" rx="210" ry="9" fill="rgba(10,27,62,0.10)"/>
+        <!-- cargo box -->
+        <rect x="20" y="38" width="286" height="120" rx="7" fill="var(--navy)"/>
+        <rect x="20" y="38" width="286" height="120" rx="7" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+        <!-- cab -->
+        <path d="M306 158 L306 76 L338 76 L372 112 L406 112 L406 158 Z" fill="var(--navy)"/>
+        <path d="M338 80 L362 80 L386 110 L338 110 Z" fill="#7FA0D8"/>
+        <rect x="402" y="138" width="8" height="20" fill="var(--gold)"/>
+        <!-- wheels -->
+        <circle cx="96" cy="160" r="22" fill="#14161c"/><circle cx="96" cy="160" r="8" fill="#6b7280"/>
+        <circle cx="232" cy="160" r="22" fill="#14161c"/><circle cx="232" cy="160" r="8" fill="#6b7280"/>
+        <circle cx="364" cy="160" r="22" fill="#14161c"/><circle cx="364" cy="160" r="8" fill="#6b7280"/>
+        <!-- logo on box -->
+        <g transform="translate(54,74)">
+          <g transform="scale(0.40)">
+            <path d="M64 4 L43 43 L64 64 Z" fill="#9FB3DD"/><path d="M64 4 L64 64 L85 43 Z" fill="#EAF0FF"/>
+            <path d="M64 124 L85 85 L64 64 Z" fill="#9FB3DD"/><path d="M64 124 L64 64 L43 85 Z" fill="#EAF0FF"/>
+            <path d="M4 64 L43 85 L64 64 Z" fill="#9FB3DD"/><path d="M4 64 L64 64 L43 43 Z" fill="#EAF0FF"/>
+            <path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 30%)"/>
+          </g>
+          <text x="66" y="34" font-family="Sora, sans-serif" font-weight="800" font-size="38" letter-spacing="-1.4" fill="#ffffff">Waafi</text>
+          <text x="68" y="50" font-family="Manrope, sans-serif" font-weight="600" font-size="9.5" letter-spacing="4.4" fill="rgba(234,240,255,0.75)">CARGO &amp; LOGISTICS</text>
+        </g>
+      </svg>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px;">
+
+      <!-- WAREHOUSE SIGNAGE -->
+      <div style="background:repeating-linear-gradient(0deg,#cfcabf 0,#cfcabf 38px,#c6c1b6 38px,#c6c1b6 39px),linear-gradient(180deg,#d4cfc4,#c2bdb2);border-radius:4px;padding:48px 30px;display:flex;flex-direction:column;align-items:center;gap:16px;position:relative;overflow:hidden;min-height:280px;justify-content:center;">
+        <div style="background:linear-gradient(150deg,#13316b,var(--navy));border-radius:6px;padding:26px 44px;display:flex;align-items:center;gap:20px;box-shadow:0 22px 44px -18px rgba(0,0,0,0.5),0 0 0 4px rgba(255,255,255,0.06);">
+          <svg viewBox="0 0 128 128" style="width:52px;overflow:visible">
+            <path d="M64 4 L43 43 L64 64 Z" fill="#9FB3DD"/><path d="M64 4 L64 64 L85 43 Z" fill="#EAF0FF"/>
+            <path d="M64 124 L85 85 L64 64 Z" fill="#9FB3DD"/><path d="M64 124 L64 64 L43 85 Z" fill="#EAF0FF"/>
+            <path d="M4 64 L43 85 L64 64 Z" fill="#9FB3DD"/><path d="M4 64 L64 64 L43 43 Z" fill="#EAF0FF"/>
+            <path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 30%)"/>
+          </svg>
+          <div><div style="font-family:'Sora',sans-serif;font-weight:800;font-size:32px;color:#fff;letter-spacing:-0.03em;line-height:1;">Waafi</div><div style="font-size:8.5px;font-weight:600;letter-spacing:0.34em;text-transform:uppercase;color:rgba(234,240,255,0.72);margin-top:4px;">Cargo &amp; Logistics</div></div>
+        </div>
+        <span style="position:absolute;left:14px;bottom:12px;font-family:ui-monospace,Menlo,monospace;font-size:10px;color:rgba(10,27,62,0.4);">Distribution centre — exterior signage</span>
+      </div>
+
+      <!-- INVOICE -->
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(10,27,62,0.06);padding:30px;display:flex;flex-direction:column;gap:14px;">
+        <div style="border:1px solid #ECEAE3;border-radius:6px;padding:24px;font-family:'Manrope',sans-serif;">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;border-bottom:1px solid #ECEAE3;padding-bottom:16px;">
+            <div style="display:flex;align-items:center;gap:11px;">
+              <svg viewBox="0 0 128 128" style="width:34px;overflow:visible"><path d="M64 4 L43 43 L64 64 Z" fill="var(--navy)"/><path d="M64 4 L64 64 L85 43 Z" fill="var(--royal)"/><path d="M64 124 L85 85 L64 64 Z" fill="var(--navy)"/><path d="M64 124 L64 64 L43 85 Z" fill="var(--royal)"/><path d="M4 64 L43 85 L64 64 Z" fill="var(--navy)"/><path d="M4 64 L64 64 L43 43 Z" fill="var(--royal)"/><path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 28%)"/></svg>
+              <div><div style="font-family:'Sora',sans-serif;font-weight:800;font-size:16px;color:var(--navy);line-height:1;">Waafi</div><div style="font-size:7px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:#46506B;">Cargo &amp; Logistics</div></div>
+            </div>
+            <div style="text-align:right;"><div style="font-family:'Sora',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.2em;color:var(--navy);">INVOICE</div><div style="font-size:10px;color:#9A968C;">WAF-2026-0481</div></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:9px;margin-top:16px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;"><span style="height:7px;width:46%;background:#EDEBE4;border-radius:3px;"></span><span style="font-size:11px;font-weight:600;color:#46506B;">$ 4,820.00</span></div>
+            <div style="display:flex;justify-content:space-between;align-items:center;"><span style="height:7px;width:38%;background:#EDEBE4;border-radius:3px;"></span><span style="font-size:11px;font-weight:600;color:#46506B;">$ 1,160.00</span></div>
+            <div style="display:flex;justify-content:space-between;align-items:center;"><span style="height:7px;width:52%;background:#EDEBE4;border-radius:3px;"></span><span style="font-size:11px;font-weight:600;color:#46506B;">$ 940.00</span></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;background:var(--navy);border-radius:5px;padding:11px 16px;">
+            <span style="font-size:10px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;color:rgba(234,240,255,0.75);">Total Due</span>
+            <span style="font-family:'Sora',sans-serif;font-weight:700;font-size:16px;color:var(--gold);">$ 6,920.00</span>
+          </div>
+        </div>
+        <div style="font-size:11px;color:#9A968C;text-align:center;">Invoice &amp; document branding</div>
+      </div>
+    </div>
+
+    <!-- BUSINESS CARDS -->
+    <div style="background:linear-gradient(160deg,#23262C,#0E0F12);border-radius:4px;padding:70px 40px;margin-top:22px;display:flex;align-items:center;justify-content:center;perspective:1700px;overflow:hidden;">
+      <div style="position:relative;width:560px;height:300px;transform-style:preserve-3d;">
+        <div style="position:absolute;left:150px;top:18px;width:360px;height:216px;border-radius:12px;background:#fff;box-shadow:0 40px 70px -24px rgba(0,0,0,0.7);transform:rotateX(46deg) rotateZ(-30deg);padding:26px 28px;display:flex;flex-direction:column;justify-content:space-between;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <svg viewBox="0 0 128 128" style="width:34px;overflow:visible"><path d="M64 4 L43 43 L64 64 Z" fill="var(--navy)"/><path d="M64 4 L64 64 L85 43 Z" fill="var(--royal)"/><path d="M64 124 L85 85 L64 64 Z" fill="var(--navy)"/><path d="M64 124 L64 64 L43 85 Z" fill="var(--royal)"/><path d="M4 64 L43 85 L64 64 Z" fill="var(--navy)"/><path d="M4 64 L64 64 L43 43 Z" fill="var(--royal)"/><path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 28%)"/></svg>
+            <div><div style="font-family:'Sora',sans-serif;font-weight:800;font-size:18px;color:var(--navy);line-height:1;">Waafi</div><div style="font-size:7px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;color:#46506B;">Cargo &amp; Logistics</div></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:5px;">
+            <div style="font-family:'Sora',sans-serif;font-weight:700;font-size:13px;color:var(--navy);">Amina Yusuf</div>
+            <div style="font-size:10px;color:#8A8E98;">Head of Global Freight</div>
+            <div style="width:60px;height:2px;background:var(--gold);margin-top:4px;"></div>
+          </div>
+        </div>
+        <div style="position:absolute;left:36px;top:70px;width:360px;height:216px;border-radius:12px;background:linear-gradient(150deg,#13316b,var(--navy));box-shadow:0 50px 80px -22px rgba(0,0,0,0.75);transform:rotateX(46deg) rotateZ(-30deg);padding:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;position:relative;overflow:hidden;">
+          <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 84% 12%, rgba(201,162,70,0.22), transparent 55%);"></div>
+          <svg viewBox="0 0 128 128" style="width:50px;overflow:visible"><path d="M64 4 L43 43 L64 64 Z" fill="#9FB3DD"/><path d="M64 4 L64 64 L85 43 Z" fill="#EAF0FF"/><path d="M64 124 L85 85 L64 64 Z" fill="#9FB3DD"/><path d="M64 124 L64 64 L43 85 Z" fill="#EAF0FF"/><path d="M4 64 L43 85 L64 64 Z" fill="#9FB3DD"/><path d="M4 64 L64 64 L43 43 Z" fill="#EAF0FF"/><path d="M124 64 L85 43 L64 64 Z" fill="var(--gold)"/><path d="M124 64 L64 64 L85 85 Z" fill="color-mix(in srgb,var(--gold),#fff 30%)"/></svg>
+          <div style="font-family:'Sora',sans-serif;font-weight:800;font-size:26px;color:#fff;letter-spacing:-0.03em;">Waafi</div>
+          <div style="font-size:8px;font-weight:600;letter-spacing:0.4em;text-transform:uppercase;color:rgba(234,240,255,0.7);padding-left:0.4em;">Cargo &amp; Logistics</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <div style="max-width:1120px;margin:46px auto 0;padding:0 40px;">
+    <div style="height:1px;background:#D7D4CB;"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding-top:18px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <svg viewBox="0 0 128 128" style="width:20px;overflow:visible"><path d="M64 4 L85 43 L124 64 L85 85 L64 124 L43 85 L4 64 L43 43 Z" fill="var(--navy)"/><path d="M85 43 L124 64 L85 85 L64 64 Z" fill="url(#goldG)"/></svg>
+        <span style="font-family:'Sora',sans-serif;font-weight:700;font-size:13px;color:var(--navy);">Waafi Cargo &amp; Logistics</span>
+      </div>
+      <span style="font-size:11px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:#9A968C;">Enterprise Identity · 2026</span>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 1200, &quot;height&quot;: 1800 },
+  &quot;navy&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#0A1B3E&quot;, &quot;tsType&quot;: &quot;string&quot; },
+  &quot;royal&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#1E50D6&quot;, &quot;tsType&quot;: &quot;string&quot; },
+  &quot;gold&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#C9A246&quot;, &quot;tsType&quot;: &quot;string&quot; }
+}">
+class Component extends DCLogic {
+  componentDidMount() { this.apply(); }
+  componentDidUpdate() { this.apply(); }
+  apply() {
+    const el = this.root;
+    if (!el) return;
+    const p = this.props || {};
+    if (p.navy) el.style.setProperty('--navy', p.navy);
+    if (p.royal) el.style.setProperty('--royal', p.royal);
+    if (p.gold) el.style.setProperty('--gold', p.gold);
+  }
+  renderVals() {
+    return { setRoot: (e) => { this.root = e; } };
+  }
+}
+</script>
+</body>
+</html>
